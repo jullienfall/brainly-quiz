@@ -1,0 +1,24 @@
+.container {
+    background-color: #f0f3f5;
+    background-image: radial-gradient(circle, #434e66 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 41px 40px;
+    height: 100vh;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-deck {
+    display: none;
+}
+
+.container-deck__btn {
+    width: 200px;
+    margin: 10px;
+}
+
+.container-result {
+    display: none;
+    color: #fff;
+}

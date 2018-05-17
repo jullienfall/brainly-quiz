@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brainly Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://styleguide.brainly.com/134.2.1/style-guide.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <button class="sg-button-primary container__btn">Start a Quiz!</button>
+
+        <div class="sg-card sg-card--padding-small sg-card--centered container-deck">
+            <div class="sg-card__hole sg-card__hole--gray-secondary-light">
+                <div class="sg-content-box">
+                    <div class="sg-content-box__header">
+                        <h3 class="sg-header-secondary container-deck__question"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="sg-card__hole sg-card__hole--navyblue-secondary">
+                <div class="sg-actions-list sg-actions-list--centered">
+                    <div>
+                        <button class="sg-button-secondary container-deck__btn container-deck__btn--one" onclick="selectAnswer(firstButton)"></button>
+                    </div>
+                    <div>
+                        <button class="sg-button-secondary container-deck__btn container-deck__btn--two" onclick="selectAnswer(secondButton)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sg-box sg-box--navyblue-secondary sg-box--no-border sg-box--large-padding container-result">
+            <div>
+                <div>Questions resolved:
+                    <div class="sg-badge sg-badge--mint-secondary-light sg-badge--large">
+                        <div class="sg-text sg-text--mint sg-text--emphasised container-result__score"></div>
+                    </div>
+                </div>
+                <div>Mistakes:
+                    <div class="sg-badge sg-badge--peach sg-badge--large">
+                        <div class="sg-text sg-text--light sg-text--emphasised container-result__mistakes"></div>
+                    </div>
+                </div>
+                <div>Time:
+                    <span class="container-result__minutes"></span>:<span class="container-result__seconds"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
